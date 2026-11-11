@@ -1,0 +1,2 @@
+Read the shared behavior contract at $SPEC. Use workspace registration with explicit alias=checkout paths. Identify producer/consumer ownership, API/event/schema/generated-client/configuration/dependency changes, compatibility expectations and rollout dependencies. Execute per-repository verification for stable acceptance IDs. Do not infer deployed compatibility from aligned checkouts.
+Request: $REQUEST

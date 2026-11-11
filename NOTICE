@@ -1,0 +1,10 @@
+Graph Loop Skills original runtime: MIT, Copyright (c) 2026 Graph Loop contributors.
+
+Spotify Shunt derivatives: Apache-2.0, Spotify and contributors. Source: spotify/portal-ai-plugins/plugins/shunt, commit aa252eb21df5bbf32b0beb45f84a2c03341ccad8.
+Modified files identify the port. See licenses/spotify-shunt-APACHE-2.0.txt and provenance.json.
+Portal, AiKA and their authentication/actions are not included.
+
+Ponytail/Ponytail Review: MIT, Copyright (c) 2026 DietrichGebert.
+Full MIT permission terms in LICENSE apply with that notice.
+
+Graphify is an external pinned dependency; its distribution includes its own licenses and notices.

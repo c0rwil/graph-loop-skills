@@ -1,0 +1,41 @@
+{
+  "spotify_shunt": {
+    "repository": "https://github.com/spotify/portal-ai-plugins",
+    "path": "plugins/shunt",
+    "version": "0.2.0",
+    "commit": "aa252eb21df5bbf32b0beb45f84a2c03341ccad8",
+    "license": "Apache-2.0",
+    "source_hashes": {
+      "hooks/check-file-size": "b864fdd3186b7ea3805cc76f68ad2ddb65ad1dd8616379c0b6b71a0c95a760db",
+      "hooks/check-bash-read": "f27fe40cfae95076ff1961cc522f67c2e4afd5d7c61f6570497c322c9dbacbac",
+      "scripts/bulk-read": "f1e552e8325139d797ac6b69d6216cc62f9381abb3198b8ee9b6f4a0ff2b6b08",
+      "scripts/code-write": "6bcf94c97a6cd315e2d82f9ffbd672f59b958d0c7b86e4411e7ff97baad25c86",
+      "scripts/lib/aika.sh": "dafba8ec7c361d0cd33df6c1e51c632afcbdd72068b669daee727f361f3a2d5d",
+      "skills/bulk-reader/SKILL.md": "cb647fa0a79727828b31a6ead4ddfb309d7c529edce7f5853aafb6fbcebd1069",
+      "skills/code-writer/SKILL.md": "6fed0d37ab28dc616ab91b69f8e43dcc509a52af79b8730d3c3a633dc7fcdea5"
+    },
+    "modifications": [
+      "Python/stdlib port of routing and named scripts",
+      "Removed Portal CLI, AiKA, jq and remote modes",
+      "Native/LiteLLM one-shot workers",
+      "Modern hook schemas, instruction exemptions, targeted head/tail handling",
+      "Atomic non-overwriting generation"
+    ]
+  },
+  "graphify": {
+    "repository": "https://github.com/Graphify-Labs/graphify",
+    "package": "graphifyy",
+    "version": "0.9.104",
+    "license": "Apache-2.0"
+  },
+  "ponytail": {
+    "repository": "https://github.com/DietrichGebert/ponytail",
+    "license": "MIT",
+    "source": "Pinned upstream skills; optional argument-hint frontmatter removed for portable validation",
+    "file_hashes": {
+      "ponytail": "b72d499d7a3d2490bb9b0836b0d61e9a1a6352f8eb9ceb9a66d452894c14fe33",
+      "ponytail-review": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e"
+    },
+    "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+  }
+}

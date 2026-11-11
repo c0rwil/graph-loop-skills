@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+# Spotify Shunt 0.2.0 interface, modified: local native/LiteLLM transport. Apache-2.0; see NOTICE.
+import sys
+sys.dont_write_bytecode=True
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]))
+from graph_loop.cli import main
+sys.argv.insert(1,'bulk-read')
+raise SystemExit(main())

@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+# Spotify Shunt 0.2.0 hook, modified for stdlib/modern schemas. Apache-2.0; see NOTICE.
+import json,sys
+sys.dont_write_bytecode=True
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]))
+from graph_loop.hooks import routing
+e=json.load(sys.stdin);e["tool_name"]='Read'
+r=routing(Path(e.get("cwd",".")).resolve(),e)
+print(json.dumps({"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":r}} if r else {}))

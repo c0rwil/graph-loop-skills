@@ -1,0 +1,32 @@
+{
+  "id": "shared-behavior",
+  "objective": "State one observable shared behavior",
+  "changes": [
+    {
+      "kind": "api",
+      "producer": "api",
+      "consumers": [
+        "web"
+      ],
+      "compatibility": "Additive; existing consumers remain supported",
+      "rollout_after": []
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "AC-1",
+      "description": "State a concrete observable behavior",
+      "repositories": {
+        "api": [
+          "python3",
+          "-m",
+          "unittest"
+        ],
+        "web": [
+          "npm",
+          "test"
+        ]
+      }
+    }
+  ]
+}
